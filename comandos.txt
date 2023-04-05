@@ -1,0 +1,39 @@
+Changes:
+-OrderActor
+-OrderRoutes
+-Main
+​
+DBServer
+sbt "runMain com.reactivebbq.orders.H2Database"
+​
+Nodes
+sbt "runMain com.reactivebbq.orders.Main -Dakka.http.server.default-http-port=8000 -Dakka.remote.artery.canonical.port=2551 -Dakka.management.http.port=8558 -Dcinnamon.prometheus.http-server.port=9001"
+sbt "runMain com.reactivebbq.orders.Main -Dakka.http.server.default-http-port=8001 -Dakka.remote.artery.canonical.port=2552 -Dakka.management.http.port=8559 -Dcinnamon.prometheus.http-server.port=9002"
+sbt "runMain com.reactivebbq.orders.Main -Dakka.http.server.default-http-port=8002 -Dakka.remote.artery.canonical.port=2553 -Dakka.management.http.port=8560 -Dcinnamon.prometheus.http-server.port=9003"
+​
+Load Test:
+sbt "runMain com.reactivebbq.orders.LoadTest -Dcinnamon.prometheus.http-server.port=9004"
+​
+Order Commands
+"runMain com.reactivebbq.orders.Client ${@}"
+​
+sbt "runMain com.reactivebbq.orders.Client open Locke 5"
+Response: {"id":"f4514b05-fb4d-4031-ac24-d464db638442","items":[],"server":{"name":"Locke"},"table":{"number":5}}
+​
+sbt "runMain com.reactivebbq.orders.Client add f4514b05-fb4d-4031-ac24-d464db638442 Salad Ranch"
+Response: {"id":"f4514b05-fb4d-4031-ac24-d464db638442","items":[{"name":"Salad","specialInstructions":"Ranch"}],"server":{"name":"Locke"},"table":{"number":5}}
+​
+sbt "runMain com.reactivebbq.orders.Client find f4514b05-fb4d-4031-ac24-d464db638442"
+ {"id":"f4514b05-fb4d-4031-ac24-d464db638442",
+ "items":[{"name":"Salad","specialInstructions":"Ranch"}],
+ "server":{"name":"Locke"},
+ "table":{"number":5}}
+ 
+
+ mi version de java:
+
+PS C:\Users\AlexanderAlvarenga\Documents\AkkaProjects\YelloTaxiStatsAkka\YelloTaxiStatsAkka> java --version
+java 11.0.15.1 2022-04-22 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.15.1+2-LTS-10)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.15.1+2-LTS-10, mixed mode)
+ 

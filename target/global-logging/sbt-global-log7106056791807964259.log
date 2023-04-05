@@ -1,0 +1,53 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(f8c134c9-e7d0-444e-942d-835c2a05d356), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources to /home/victor/Documents/dev/1-Software-Development/scala/trainee_program_scala/module 12 - akka_cluster_sharding/LAC-Sharding-v1/exercises/scala/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 10.2.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to /home/victor/Documents/dev/1-Software-Development/scala/trainee_program_scala/module 12 - akka_cluster_sharding/LAC-Sharding-v1/exercises/scala/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mwithItem[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item when no previous items exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item appended when previous items exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInMemoryOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderIdTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mapply[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate a unique id each time it is called[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSQLOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderRoutesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET to /order/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order/{id}/items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 22 seconds, 733 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 22[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 22, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 39 s, completed Feb 6, 2023, 11:04:30 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

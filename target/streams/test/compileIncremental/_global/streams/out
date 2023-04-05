@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 29 products, 8 sources, 13 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/test/scala/com/reactivebbq/orders/OrderHelpers.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/OrderRepositoryTest.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/OrderTest.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/AkkaSpec.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/OrderIdTest.scala, ${BASE}/src/test/scala/com/reactivebbq/orders/JsonContractTest.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set(NamesChange(com.reactivebbq.orders.OrderActor$,ModifiedNames(changes = UsedName(finalize,[Default])))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe com.reactivebbq.orders.OrderActor$ has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) com.reactivebbq.orders.OrderActor$: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNow invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) com.reactivebbq.orders.OrderActor$.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of com.reactivebbq.orders.OrderActorTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of com.reactivebbq.orders.JsonContractTest.OrderSupervisor. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of com.reactivebbq.orders.OrderActorTest.TestContext. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of com.reactivebbq.orders.OrderRoutesTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/victor/Documents/dev/1-Software-Development/scala/trainee_program_scala/module 12 - akka_cluster_sharding/LAC-Sharding-v1/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:69:20: not found: value entityIdExtractor[0m
+[0m[[0m[31merror[0m] [0m[0m      val result = entityIdExtractor(envelope)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/victor/Documents/dev/1-Software-Development/scala/trainee_program_scala/module 12 - akka_cluster_sharding/LAC-Sharding-v1/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:81:27: not found: value shardIdExtractor[0m
+[0m[[0m[31merror[0m] [0m[0m      val envelopeShard = shardIdExtractor(envelope)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
